@@ -33,6 +33,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,HistoryActivity::class.java)
             startActivity(intent)
         }
+        binding?.flAbout?.setOnClickListener {
+            val intent = Intent(this,AboutExercisesActivity::class.java)
+            startActivity(intent)
+        }
 
     }
     override fun onDestroy() {
