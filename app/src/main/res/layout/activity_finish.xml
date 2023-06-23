@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinishActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarFinishActivity"
+        android:layout_width="match_parent"
+        android:theme="@style/ToolbarTheme"
+        android:background="@color/white"
+        app:titleTextColor="@color/colorPrimary"
+        android:layout_height="?android:actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/tvEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="END"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarFinishActivity"
+        app:layout_constraintBottom_toTopOf="@id/ivDone"
+        android:layout_margin="15dp"
+        />
+    <ImageView
+        android:id="@+id/ivDone"
+        android:src="@drawable/ic_finish"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvEnd"
+        app:layout_constraintBottom_toTopOf="@+id/tvfinish"
+        android:layout_margin="15dp"
+        />
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/tvfinish"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!! You have completed the 7 minute workout"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btfinish"
+        app:layout_constraintTop_toBottomOf="@id/ivDone"
+        android:layout_marginBottom="15dp"
+
+        />
+    <Button
+        android:id="@+id/btfinish"
+        app:layout_constraintTop_toBottomOf="@id/tvfinish"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Finish"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
