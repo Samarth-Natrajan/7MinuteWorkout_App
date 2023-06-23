@@ -13,6 +13,9 @@
         android:theme="@style/Theme.7MinuteWorkoutApp"
         tools:targetApi="31">
         <activity
+            android:name=".AboutExercisesActivity"
+            android:exported="false" />
+        <activity
             android:name=".HistoryActivity"
             android:exported="false" />
         <activity

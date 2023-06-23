@@ -49,7 +49,8 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
 
         tts = TextToSpeech(this,this)
-        //speakOut("The exercises will start in a few seconds")
+        val s = "The exercises will start in a few seconds"
+        speakOut(s)
         exerciseList = Constants.defaultExerciseList()
 
         setupRestView()
@@ -194,5 +195,4 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private fun speakOut(text:String){
         tts?.speak(text,TextToSpeech.QUEUE_FLUSH,null,"")
     }
-
 }
