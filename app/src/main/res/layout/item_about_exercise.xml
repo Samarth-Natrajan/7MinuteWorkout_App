@@ -10,8 +10,10 @@
             android:id="@+id/Card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="5dp"
-            android:backgroundTint="#DFDFEF"
+            app:cardElevation="5dp"
+            app:strokeWidth="3dp"
+            app:strokeColor="@color/colorAccent"
+            android:backgroundTint="#989898"
             android:layout_margin="5dp"
             >
         <LinearLayout
@@ -21,12 +23,16 @@
             <TextView
                 android:id="@+id/ExerciseName"
                 tools:text="Exercise Name"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
                 android:textSize="20sp"
+                android:textStyle="bold"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <ImageView
                 android:id="@+id/ExercisePic"
+                android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:src="@drawable/ic_jumping_jacks"/>
@@ -34,7 +40,9 @@
                 android:id="@+id/tvAboutExercise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_gravity="center"
+                android:textColor="@color/white"
                 tools:text="lknfsljgleirnglgblkeajbrklgbrgcnrekufnciaucgoruegtnlcagfucnineseriucgnieangriuncggercnhgeruigmerucmiencuncieruuevnreiugncieugnceiucmigumigeur"/>
         </LinearLayout>
         </com.google.android.material.card.MaterialCardView>

@@ -79,8 +79,8 @@
         app:layout_constraintTop_toBottomOf="@id/myImageView"
         >
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_gravity="center"
             android:src="@drawable/img_11"/>
     </FrameLayout>
