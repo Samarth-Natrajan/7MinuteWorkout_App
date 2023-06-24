@@ -11,7 +11,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="5dp"
-            android:backgroundTint="@color/teal_200"
+            android:backgroundTint="#DFDFEF"
             android:layout_margin="5dp"
             >
         <LinearLayout
@@ -34,6 +34,7 @@
                 android:id="@+id/tvAboutExercise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 tools:text="lknfsljgleirnglgblkeajbrklgbrgcnrekufnciaucgoruegtnlcagfucnineseriucgnieangriuncggercnhgeruigmerucmiencuncieruuevnreiugncieugnceiucmigumigeur"/>
         </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
