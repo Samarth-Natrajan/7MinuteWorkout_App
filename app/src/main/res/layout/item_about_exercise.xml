@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -11,29 +11,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="5dp"
+            android:backgroundTint="@color/teal_200"
+            android:layout_margin="5dp"
             >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/ExerciseName"
                 tools:text="Exercise Name"
                 android:textSize="20sp"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <ImageView
+                android:id="@+id/ExercisePic"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:src="@drawable/ic_jumping_jacks"/>
             <TextView
+                android:id="@+id/tvAboutExercise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="lknfsljgleirnglgblkeajbrklgbrgcnrekufnciaucgoruegtnlcagfucnineseriucgnieangriuncggercnhgeruigmerucmiencuncieruuevnreiugncieugnceiucmigumigeur"/>
         </LinearLayout>
-
-
-
         </com.google.android.material.card.MaterialCardView>
 
 
