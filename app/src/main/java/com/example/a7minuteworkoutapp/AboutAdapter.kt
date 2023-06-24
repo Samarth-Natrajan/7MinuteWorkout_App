@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.a7minuteworkoutapp.databinding.ActivityAboutExercisesBinding
 import com.example.a7minuteworkoutapp.databinding.ItemAboutExerciseBinding
 
-//TODO implement adapter class
+
 class AboutAdapter(val aboutExerciseList:List<AboutExercise>):RecyclerView.Adapter<AboutAdapter.AboutExerciseViewHolder>() {
     inner class AboutExerciseViewHolder(val itemBinding:ItemAboutExerciseBinding):RecyclerView.ViewHolder(itemBinding.root){
         fun bindItem(aboutExercise: AboutExercise){

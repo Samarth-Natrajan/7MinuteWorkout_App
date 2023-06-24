@@ -14,7 +14,7 @@ class AboutExercisesActivity : AppCompatActivity() {
         setSupportActionBar(binding?.toolbarAboutExercise)
         if(supportActionBar!=null){
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
-            supportActionBar?.title = "About the exercises"
+            supportActionBar?.title = "About Us"
         }
         binding?.toolbarAboutExercise?.setNavigationOnClickListener{
             onBackPressedDispatcher.onBackPressed()
@@ -22,6 +22,7 @@ class AboutExercisesActivity : AppCompatActivity() {
         val adapter = AboutAdapter(AboutList.aboutList)
         binding?.aboutExerciseRv?.adapter = adapter
         binding?.aboutExerciseRv?.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+        binding?.tvAbout?.text = "Perform high intensity exercises for 7 minutes.Track your health and fitness using a BMI calculator and history page which lists your exercises.Check out on how to do each exercise in the app below before starting.\n" + "ALL THE BEST!"
 
 
 
