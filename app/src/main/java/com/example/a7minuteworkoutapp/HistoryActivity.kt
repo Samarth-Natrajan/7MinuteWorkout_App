@@ -26,7 +26,6 @@ class HistoryActivity : AppCompatActivity() {
 
         binding?.toolbarHistoryActivity?.setNavigationOnClickListener{
             onBackPressedDispatcher.onBackPressed()
-
         }
     }
     private fun getAllCompletedDates(historyDao: HistoryDao){

@@ -139,7 +139,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:max="30"
+            android:max="25"
             android:background="@drawable/circular_progress_grey"
             android:progressDrawable="@drawable/circular_progress_bar"
             android:progress="30"
